@@ -1,0 +1,82 @@
+-=-=-=-=-=-=-=-=-=-=- Généralités sur la restructuration du source du site GoodGame -=-=-=-=-=-=-=-=-=-=-
+
+Nouveau site GoodGame:
+
+Afin de palier à la mauvaise navigation dans les sources du site GoodGame le site va être réorganisé.
+Cette réorganisation a donc pour but de rendre la navigation plus simple mais également de faciliter les futures améliorations du site.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Arborescence:
+-------------
+~
+|
+|   /* Fichiers */
+|-index.php
+|-contact.php
+|-inscription.php
+|-mentionsLegales.php
+|-partenaires.php
+|-connexion.php
+|-galerie.php
+|
+|-image
+|   |-logoGoodGame.png
+|
+|-bootstrap-3.3.7-dist  /* Dossiers contenant les sources du framework Bootstrap
+|-font-awesome-4.7.0    /* Dossiers contenant les sources du framework Fontawesome
+|-htmlInclude
+|   |-enTete.php
+|   |-footer.php
+|-phpIncludes
+|   |-bd.inc.php    /* Contient les fonctions d'accès à la base de données */
+|   |-outilsConnextion.inc.php  /* Fonctions relatives à la connexions et inscriptions */
+|-styles
+|   |-styleCommun.css /* Style commun à toutes les pages */
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Notes:
+-------
+Les anciens fichiers d'inclusions type connexion.inc.php seront fusionnés à la page correspondantes. Cela entraînera des fichiers plus long mais une centralisation du code. L'éparpillage des fonctions dans différents fichiers étant un des principaux problèmes de lisibilité.
+
+Les commentaires (en particuliers des parties PHP) seront relus, ajouté et modifié afin d'accroître la lisibilité.
+Les fonctions seront regroupées par type (ex: getters, ...)
+Si une fonction se trouve dans plusieurs fichiers à la fois il sera alors jugé utile de créer un fichiers outils....php qui permettra de centraliser les fonctions. On veillera cependant à limiter le nombre de fichiers outils.
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Liste des tâches:
+----------------
+Restructuration de l'index ---------- En cours
+Restructuration de la page de contact
+Restructuration de la page d'inscription
+Restructuration de la page mentions légales
+Restructuration de la page de partenaires
+Restructuration de la page de connexion
+Restructuration de la page de galerie
+Centralisation des fonctions en doubles
+Travail sur les fichiers ...inc.php
+Restructuration des CSS
+Travail sur les documentations (commentaires)
+Rédaction d'un document d'aide au développement (arborescence, nommage, ...)
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Futures fonctionnalitées pouvant être développées:
+-------------------------------------------------
+|
+|-Réparation du module de paiement en ligne
+|-Restructuration du système de galerie
+|   |-Refonte graphique
+|   |-Refonte de la consultation d'une photo (Affichage modal avec navigation)
+|-Fonctionnalités administrateur:
+|   |-Gestion des utilisateurs
+|   |   |-Passer un utilisateur en mode actif
+|   |   |-Passer un utilisateur en mode administrateur
+|-Affichage des articles par paquets avec un système de page
