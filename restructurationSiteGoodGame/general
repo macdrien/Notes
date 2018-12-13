@@ -51,18 +51,19 @@ Si une fonction se trouve dans plusieurs fichiers à la fois il sera alors jugé
 
 Liste des tâches:
 ----------------
-Restructuration de l'index ---------- En cours
-Restructuration de la page de contact
-Restructuration de la page d'inscription
-Restructuration de la page mentions légales
-Restructuration de la page de partenaires
-Restructuration de la page de connexion
-Restructuration de la page de galerie
-Centralisation des fonctions en doubles
-Travail sur les fichiers ...inc.php
-Restructuration des CSS
-Travail sur les documentations (commentaires)
-Rédaction d'un document d'aide au développement (arborescence, nommage, ...)
+Restructuration des inclusions d'en-tête, menu et footer    : OK
+Restructuration de l'index                      : En cours
+Restructuration de la page de contact           : En Attente
+Restructuration de la page d'inscription        : En Attente
+Restructuration de la page mentions légales     : En Attente
+Restructuration de la page de partenaires       : En Attente
+Restructuration de la page de connexion         : En Attente
+Restructuration de la page de galerie           : En Attente
+Centralisation des fonctions en doubles         : En Attente
+Travail sur les fichiers ...inc.php             : En Attente
+Restructuration des CSS                         : En Attente
+Travail sur les documentations (commentaires)   : En Attente
+Rédaction d'un document d'aide au développement (arborescence, nommage, ...)    : En Attente
 
 
 
