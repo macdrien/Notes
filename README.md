@@ -7,3 +7,6 @@ General notes and comments.
 --- [Atom]references
 URL, books, authors or whatever which is helpful.
 That can be online documentation, development book, free library...
+
+----- siteGoodGame
+Notes and project management about the GoodGame's website.
