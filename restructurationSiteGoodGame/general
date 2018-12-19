@@ -67,6 +67,10 @@ Rédaction d'un document d'aide au développement (arborescence, nommage, ...)  
 ---------------
 [NEW] -----
 Liste des tâches : à voir sur le site Trello (projet privé)
+Dans cette nouvelle organisation je commancerai par les fonctions back-end d'accès à la bd, puis les autres fonctions php.
+-----Descriptif de la cause du changement :
+Cela me permettra par la suite de remanier plus simmplement et en une fois les pages front-end.
+Ce changement vient du fait que, en remaniant la page index, je me suis très rapidement retrouvé dans l'impossibilité de voir le résultat sans utiliser de php.
 
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-
