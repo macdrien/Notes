@@ -48,7 +48,7 @@ Si une fonction se trouve dans plusieurs fichiers à la fois il sera alors jugé
 
 
 -=-=-=-=-=-=-=-=-=-=-=-=-
-
+[OLD] -----
 Liste des tâches:
 ----------------
 Restructuration des inclusions d'en-tête, menu et footer    : OK
@@ -64,7 +64,9 @@ Travail sur les fichiers ...inc.php             : En Attente
 Restructuration des CSS                         : En Attente
 Travail sur les documentations (commentaires)   : En Attente
 Rédaction d'un document d'aide au développement (arborescence, nommage, ...)    : En Attente
-
+---------------
+[NEW] -----
+Liste des tâches : à voir sur le site Trello (projet privé)
 
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-
