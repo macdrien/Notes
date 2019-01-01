@@ -86,7 +86,8 @@ Futures fonctionnalitées pouvant être développées:
 |   |-Gestion des utilisateurs
 |   |   |-Passer un utilisateur en mode actif
 |   |   |-Passer un utilisateur en mode administrateur
+|   |-Affichage des jeux auxquels un utilisateur est inscrit lors de la consultation
+|   |-Compteur du nombre d'inscrits sur une lan
 |-Affichage des articles par paquets avec un système de page
-|-Compteur du nombre d'inscrits sur une lan
 |-Pop-up à l'inscription pour rappeler aux joueurs de faire leurs mises à jour avant de venir.
-|-Système de prépaiement des repasIIII
+|-Système de prépaiement des repas
