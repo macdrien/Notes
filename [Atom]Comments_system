@@ -1,11 +1,11 @@
-Système de notes et de commentaires
+---------- Système de notes et de commentaires ----------
 
 Au cours de mon travail et de mes projets personnels j'ai développé un petit système de notation de différents éléments.
-Ce n'est pas un système très poussé mais je pense qu'il a du potentiel et même qu'il peut s'avérer utile dans un contexte professionnel
-et qu'il peut mêmese voir intégrer un système d'intégration continu afin de prendre différents cas en compte.
-Étant donné que je pense que ce petit système (qui se verra compléter au fils des cas rencontrés) efficace, je vous le partage.
-Cela vous permettra éventuellement de le mettre en place, de le tester afin de l'éprouver et surtout de l'améliorer.
-Cela vous permettra également si il ne vous convients pas tout à fait de vous en inspirer pour créer votre propre système.
+    Ce n'est pas un système très poussé mais je pense qu'il a du potentiel et même qu'il peut s'avérer utile dans un
+    contexte professionnel et qu'il peut mêmese voir intégrer un système d'intégration continu afin de prendre différents cas en compte.
+    Étant donné que je pense que ce petit système (qui se verra compléter au fils des cas rencontrés) efficace, je vous le partage.
+    Cela vous permettra éventuellement de le mettre en place, de le tester afin de l'éprouver et surtout de l'améliorer.
+    Cela vous permettra également si il ne vous convients pas tout à fait de vous en inspirer pour créer votre propre système.
 
 ----- Plan -----
 1 - Généralités
@@ -14,9 +14,41 @@ Cela vous permettra également si il ne vous convients pas tout à fait de vous 
 
 
 ----- 1 - Généralités -----
-
+Les différentes notations sont sous forme de balises. Ces balises se trouvent principalement en commentaire.
+    Elles aident donc à la documentation du code mais également aux tests et au débogagge.
+    Les balises sont courtes et ont toujours la même structure: le caractère # suivi (=collé) d'une lettre en majuscule.
+    Plus tard et en fonction des cas la lettre pourra être remplacée par d'autres caractères (chiffres, caractères spéciaux, ...).
+    Il faudra cependant veiller à ne pas utiliser ces balises (ou alors à les modifier)
+    afin de ne pas utiliser de combinaisons spéciales relatives à l'éditeur utilisé ou au langage employé.
 -----
 
+À l'heure ou j'écris cette première version de la documentation il n'existe que 4 balises différentes.
+Je n'ai pas cherché à aller plus loin étant donné que j'ai créé ce système au fur et à mesure de mes expériences sans forcément
+    vouloir, pour l'instant être exhaustif dans les cas possibles.
+
 ----- 2 - Les balises -----
+
+--- 1 - #D
+La balise #D est la seule qui ne s'utilise pas dans des commentaires.
+    Le D étant la première lettre de Débogagge je me sers de cette balise dans des chaînes de caractères.
+    Parfois une application génère de nombreux logs dans sa console (ou équivalent) et s'y retrouver peut être difficile.
+    Cette balise s'avèrera utile uniquement pour celles et ceux qui codes sur des éditeurs de texte (SublimeText, ...) et
+    non des IDE (Eclipse, ...) ou qui n'ont pas l'habitude d'utiliser les outils de débogagge proposés par les IDE.
+    Elle s'utilise donc dans les chaînes de caractères de test (consultation de valeur, savoir si le programme passe
+    effectivement par tel ou tel bloc, ...) afin de ne pas en perdre l'origine. En effet à force d'affichages, parfois
+    peu explicites, on peut en perdre l'origine. Cette balise est présente pour éviter cela.
+    
+Structure de la suite du message: Voici un exemple générique de l'utilisation de cette balise:
+    "#D nomFichier l.numLigneAffichage [: Message complémentaire (affichage de variables, ...)]"
+   
+Par l'utilisation de cette balise il devient très simple de retrouver l'origine, dans le code, de son affichage.
+Le numéro de la ligne peut éventuellement être mis à jour si l'on ajoute ou supprime du code en amont de l'affichage.
+    Cependant personnellement je ne le fais pas car ce numéro de changeait que peu dans mes cas de figure.
+Enfin de reconnais de cette balise est un peu lourde à mettre en place à cause de la longueur de son affichage minimal.
+    Pour compenser en partie cela il est simplement possible de faire des copier-collé.
+    Cependant il faut faire attention de bien modifier le numéro de la ligne et éventuellement le nom du fichier à chaque
+    collé pour ne pas perdre la ligne.
+---
+
 
 -----
