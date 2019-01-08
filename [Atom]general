@@ -1,1 +1,19 @@
 -=-=-=-=-=-=-=-=-=-=- Notes -=-=-=-=-=-=-=-=-=-=-
+
+----- Port SMTP utilisés -----
+Les principaux ports sont les 2 suivants:
+25 : Pour un smtp sans authentification. La RFC-2505 de février 1999 demande l'interdiction de ce port.
+        La justification est que la majorité des mails de spams envoyés aujourd'hui le sont via
+        des ordinateurs contaminer et qui utilisent ce port.
+        Aujourd'hui, certains FAI bloquent le port 25 par défaut. Mais il reste souvent possible
+        de l'activer manuellement ou d'en demander l'activation.
+587 : Pour un smtp avec authentification. C'est vers ce port que l'utilisation des smtp tend.
+        Cependant l'utilisation de ce port demande une authentification (mail et mot de passe).
+        
+Certains services permettent cependant l'utilisation d'autres ports comme gmail et le port 465.
+
+RFC-2505 :
+    https://tools.ietf.org/html/rfc2505
+Documentation des ports smtp de Gmail et Gsuite :
+    https://support.google.com/a/answer/176600?hl=fr
+----------
