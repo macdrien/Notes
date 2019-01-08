@@ -10,6 +10,11 @@ Au cours de mon travail et de mes projets personnels j'ai développé un petit s
 ----- Plan -----
 1 - Généralités
 2 - Balises
+    1 - #D
+    2 - #E
+    3 - #T
+    4 - #S
+    5 - #TODO
 -----
 
 
@@ -22,9 +27,9 @@ Les différentes notations sont sous forme de balises. Ces balises se trouvent p
     si elles sont des "combinaisons" spéciales relatives à l'éditeur utilisé ou au langage employé.
 -----
 
-À l'heure ou j'écris cette première version de la documentation il n'existe que 4 balises différentes.
 Je n'ai pas cherché à aller plus loin étant donné que j'ai créé ce système au fur et à mesure de mes expériences sans forcément
-    vouloir, pour l'instant, être exhaustif dans les cas possibles.
+    vouloir, pour l'instant, être exhaustif dans les cas possibles. Il est donc probable que vous trouviez d'autres balises ayant
+    leurs utilités. Je vous encourage donc à faire remonter vos idées pour qu'un maximum puisse en bénéficier.
 
 ----- 2 - Les balises -----
 
@@ -84,11 +89,31 @@ Signifiant Stub (Bouchon en français), cette balise se place encore une fois en
 Placé à la suite d'une instruction ou d'un bloc bouchon, elle permet de signifier de fait et
     de les retrouver plus facilement par la suite pour les implémenter.
     Comme toujours il est possible et conseillé d'ajouter à la suite de la balise une
-    explication pour clarifier l'utilisation du bouchon
+    explication pour clarifier l'utilisation du bouchon.
     
 Exemple:
 return true; // #S stub return
 ---
 
+--- 5 - #TODO
+Cette balise n'est pas construite en un seul caractère pour une bonne raison. Le mot TODO est très répandu dans
+    le milieu de l'informatique. Donc si comme moi vous utilisez ce système de balise à titre personnel mais
+    dans un milieu professionnel. L'utilisation du mot TODO permet aux autres membres de l'équipe de trouver vos TODO dans le
+    code et ce même si ils n'utilisent pas le système des balises. Ce qui n'aurait pas été possible si l'on avait créé
+    une nouvelle balise.
+Sauf si vous êtes novice, ce mot vous ai forcément familier. Pour ceux qui ne saurait pas les TODO sont des tâches qu'il faut exécuter.
+    Cette balise, en commentaire, permet donc de signifier qu'une partie doit être modifiée ou que des éléments doivent y être ajoutés
+    pour la rendre fonctionnelle.
+A noter que dans certains cas le choix d'un #TODO ou d'un #S sera à l'appréciation du développeur car très similaire,
+    en effet l'utilisation d'un bouchon implique souvent qu'une fonctionnalité doivent être développée plus tard.
+    
+Exemple d'utilisation:
+// #TODO implement password = uncrypt(cryptePassword);
+Exemple d'utilisation ambïgue:
+string addressFrom = "adresse@expediteur.extension", // #S value
+Qui peut être remplacé par:
+string addressFrom = "adresse@expediteur.extension", // #TODO Get the address
 
+Cette balise s'avère très utile pour marquer un endroit dans le programme qui
+    n'est pas abouti mais dont la finalisation n'est pas prioritaire.
 -----
