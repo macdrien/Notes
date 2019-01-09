@@ -5,6 +5,11 @@
 Permet l'envoi de mails. C'est la librairie recommandée par microsoft (celle de microsoft étant donnée comme obsolète)
 http://www.mimekit.net/
 -----
+----- OpenXml :
+Permet la gestion, lecture et modification de documents (word, excel, ...)
+Téléchargeable via NuGet sur VisualStudio. Nom complet : DocumentFormat.OpenXml.
+https://docs.microsoft.com/fr-fr/office/open-xml/open-xml-sdk
+-----
 -=-=-=--=-=-=-
 
 -=-=-=- Web -=-=-=-
