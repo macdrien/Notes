@@ -1,4 +1,4 @@
-﻿using DocumentFormat.OpenXml;
+using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using System;
@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 /// <summary>
-/// Listes de fonctions utiles à la lecture de fichiers excels
+/// Listes de fonctions utiles à la lecture et 
+/// modification de fichiers excels via le paquet
+/// openXml.
 /// </summary>
 /// 
 /// <remarks>
