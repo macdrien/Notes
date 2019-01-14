@@ -17,3 +17,10 @@ RFC-2505 :
 Documentation des ports smtp de Gmail et Gsuite :
     https://support.google.com/a/answer/176600?hl=fr
 ----------
+
+----- Fichiers Offices (word, ...) -----
+Sont en fait des archives (.zip).
+Il est donc possible de dézipper un .xlsx ou un .docx pour en voir le source (au format xml).
+Attention, cette action n'est possible que si le fichier n'est pas vide.
+        Créer un fichier vierge et le dézipper directement ne fonctionne donc pas.
+----------
