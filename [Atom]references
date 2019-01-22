@@ -10,6 +10,10 @@ Permet la gestion, lecture et modification de documents (word, excel, ...)
 Téléchargeable via NuGet sur VisualStudio. Nom complet : DocumentFormat.OpenXml.
 https://docs.microsoft.com/fr-fr/office/open-xml/open-xml-sdk
 -----
+----- Travail sur les fichiers :
+Liste des fonctions courantes d'entrée sortie
+https://docs.microsoft.com/fr-fr/dotnet/standard/io/common-i-o-tasks?view=netframework-4.7.2
+-----
 -=-=-=--=-=-=-
 
 -=-=-=- Web -=-=-=-
