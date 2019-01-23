@@ -15,6 +15,7 @@ Au cours de mon travail et de mes projets personnels j'ai développé un petit s
     3 - #T
     4 - #S
     5 - #TODO
+    6 - #M
 -----
 
 
@@ -116,4 +117,15 @@ string addressFrom = "adresse@expediteur.extension", // #TODO Get the address
 
 Cette balise s'avère très utile pour marquer un endroit dans le programme qui
     n'est pas abouti mais dont la finalisation n'est pas prioritaire.
+---
+
+--- 6 - #M
+Signife Mark. Permet simplement d'installer une note dans le code.
+    Cela peut être une simple note ou pour marquer un bloc de progamme.
+
+Exemple d'utilisation:
+// #M Début du bloc
+...
+// #M Fin du bloc
+---
 -----
