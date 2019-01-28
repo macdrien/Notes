@@ -5,6 +5,15 @@
 Permet l'envoi de mails. C'est la librairie recommandée par microsoft (celle de microsoft étant donnée comme obsolète)
 http://www.mimekit.net/
 -----
+----- OpenXml :
+Permet la gestion, lecture et modification de documents (word, excel, ...)
+Téléchargeable via NuGet sur VisualStudio. Nom complet : DocumentFormat.OpenXml.
+https://docs.microsoft.com/fr-fr/office/open-xml/open-xml-sdk
+-----
+----- Travail sur les fichiers :
+Liste des fonctions courantes d'entrée sortie
+https://docs.microsoft.com/fr-fr/dotnet/standard/io/common-i-o-tasks?view=netframework-4.7.2
+-----
 -=-=-=--=-=-=-
 
 -=-=-=- Web -=-=-=-
@@ -13,3 +22,8 @@ Permet de tester les couleurs et d'en récupérer les codes en hexa ou en rgb.
 https://www.w3schools.com/colors/colors_picker.asp
 -----
 -=-=-=--=-=-=-
+
+----- Liste des MIMES communs:
+Contient la liste des MIMEs usuels type "application/json".
+https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+-----
