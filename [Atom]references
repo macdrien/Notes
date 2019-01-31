@@ -23,7 +23,7 @@ https://www.w3schools.com/colors/colors_picker.asp
 -----
 -=-=-=--=-=-=-
 
------ Liste des MIMES communs:
-Contient la liste des MIMEs usuels type "application/json".
-https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+----- Liste des MIMES:
+Contient la liste des MIMEs (ex : "application/json").
+https://www.iana.org/assignments/media-types/media-types.xhtml#text
 -----
