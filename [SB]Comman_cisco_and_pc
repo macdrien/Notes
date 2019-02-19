@@ -1,8 +1,42 @@
--=-=-=-=-=-=--=-=-=-=-=-=- Commandes cisco -=-=-=-=-=-=--=-=-=-=-=-=-
-
-Enregistrer la configuration: (En mode privilégié) copy running-config startup-config
-
-
 -=-=-=-=-=-=--=-=-=-=-=-=-  Commandes pc -=-=-=-=-=-=--=-=-=-=-=-=-
 
+ping adresse
+
 Ouvrir une connexion telnet: telnet cible [port]
+
+Ouvrir une connexion ssh avec un login: ssh -l login destination
+
+
+
+
+-=-=-=-=-=-=--=-=-=-=-=-=- Commandes cisco -=-=-=-=-=-=--=-=-=-=-=-=-
+ 
+Enregistrer la configuration: (En mode privilégié) copy running-config startup-config
+
+Chiffrer les mots de passe: (En configure terminal) service password-encryption
+
+Définir un nom de domaine: (En configure terminal) ip domain-name nomDe.domaine
+
+Générer des clé de cryptage RSA: (En configure terminal) crypto key generate rsa
+    (une longueur sera demandé après validation, 512 par défaut)
+
+Créer un utilisateur avec un mot de passe: (En configure terminal) username nomDeUtilisateur secret motDePasse
+
+Vérfier les informations d'identifications dans la DB: (En line vty 0 4) login local
+
+Autoriser uniquement l'accès à distance SSH: (En line vty 0 4) transport input ssh
+
+Supprimer les mots de passes existant pour les lignes vty: (En line vty 0 4) no password motDePasse
+
+Activer la sécurité des ports: interface range portToSecure
+                               (En config-if-range) switchport port-security
+
+Niveau maximum de sécurité, un seul appareil peut accéder: (En config-if-range) switchport port-security maximum 1
+
+Sécuriser les ports pour ajouter dynamiquement les adresses MAC à la configuration: (En config-if-range) switchport port-security mac-address sticky
+
+Mettre un niveau de violation spécifique: (En config-if-range) switchport port-security violation niveauViolation
+
+blocage de tous les ports: (En configure terminal) interface range fa0/n-24 , gi0/1-2
+                              (En config-if-range) shutdown
+
