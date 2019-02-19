@@ -1,0 +1,8 @@
+-=-=-=-=-=-=--=-=-=-=-=-=- Commandes cisco -=-=-=-=-=-=--=-=-=-=-=-=-
+
+Enregistrer la configuration: (En mode privilégié) copy running-config startup-config
+
+
+-=-=-=-=-=-=--=-=-=-=-=-=-  Commandes pc -=-=-=-=-=-=--=-=-=-=-=-=-
+
+Ouvrir une connexion telnet: telnet cible [port]
