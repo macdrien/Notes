@@ -137,4 +137,11 @@ Exemples d'utilisation:
 ... /* #I Do not delete */
 /* #I #TODO Sécuriser la transaction */
 ---
+
+--- 8 - #V
+Signifie A Vérigier. Permet de marquer un point que l'on veut contrôler ou faire contrôler.
+
+Exemples d'utilisation:
+La terre fait 43000km de circonférence (#V).
+---
 -----
